@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: #F5F5F5;
+}
+
+h1,
+a {
+    font-family: "Montserrat";
+}
+
+p {
+    font-family: "Poppins";
+}
+
+
+
+.header {
+    background: #F2EAD3
+}
+
+.navbar img {
+    width: 75px;
+    margin-left: 20px;
+}
+
+li,
+a {
+
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1rem;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex
+}
+
+.nav-links a {
+    padding: 10px;
+}
+
+
+
+
+/* hero section */
+
+.hero {
+    text-align: center;
+    justify-content: center;
+    background: #3F2305;
+}
+
+.video {
+    max-width: 100%;
+    max-height: 75%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.hero p {
+    font-family: "Poppins";
+    font-weight: 400;
+    background: #3F2305;
+    color: #F5F5F5;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.summer {
+    display: inline-flex;
+    padding: 5%;
+    background: #F5F5F5;
+    margin-top: 5rem;
+
+}
+
+.content {
+    margin-right: 3rem;
+    padding: 20px;
+    background: none;
+    color: #3F2305;
+}
+
+.content h1 {
+    font-size: 50px;
+    /* background-color: #F5F5F5; */
+}
+
+.content span {
+    background: linear-gradient(to right,
+            #7953cd 20%,
+            #00affa 30%,
+            #0190cd 70%,
+            #764ada 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-size: 500% auto;
+    font-size: 60px;
+    animation: textShine 2s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.content p {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+/************* products card **************/
+
+
+
+.container h1 {
+    margin-left: 75px;
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #3F2305;
+
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* max-width: 1000px; */
+    margin: 50px;
+}
+
+.product {
+    width: calc(25% - 20px);
+    /* Adjust width to fit three products in a row with some spacing */
+    margin-bottom: 100px;
+    /* Add some bottom margin to separate rows */
+    width: auto;
+    height: auto;
+    background: #3F2305;
+    border-radius: 20px;
+
+}
+
+
+.card-content {
+    position: relative;
+    margin: 60px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.card-content a {
+    padding: 10px;
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: 700;
+
+    /* animation */
+    background: linear-gradient(to right,
+            #7953cd 20%,
+            #00affa 30%,
+            #0190cd 70%,
+            #764ada 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-size: 500% auto;
+    animation: textShine 2s ease-in-out infinite alternate;
+}
+
+
+
+
+
+.card:hover {
+    border: 5px solid #F5F5F5;
+}
+
+.card:hover .fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.7s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.card {
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    transition: background 0.8s;
+    display: flex;
+    position: relative;
+}
+
+.fade-in {
+    padding-left: 20px;
+    padding-top: 35px;
+    font-size: 25px;
+    opacity: 0;
+    font-family: "Italiana";
+    width: 150px;
+}
+
+.fade-in h2 {
+    font-family: "Italiana";
+    font-weight: 800;
+    color: #F5F5F5;
+    font-size: 2.5rem
+}
+
+.fade-in p {
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #F5F5F5;
+    font-size: 1rem
+}
+
+.card0 {
+    background: url("./media/product1.jpg") center center no-repeat;
+    background-size: 300px;
+}
+
+.card0:hover {
+    background: url("./media/product1.jpg") left center no-repeat;
+    background-size: 500px;
+}
